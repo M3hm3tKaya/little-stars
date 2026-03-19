@@ -16,22 +16,22 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed text-white/60">
-              Bakirkoyde 8 yildir cocuklarimizi sevgiyle buyutuyoruz.
-              Guvende, mutlu ve yaratici bireyler yetistirmek icin buradayiz.
+              Bakırköy'de 8 yıldır çocuklarımızı sevgiyle büyütüyoruz.
+              Güvende, mutlu ve yaratıcı bireyler yetiştirmek için buradayız.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-4">Hizli Erisim</h4>
+            <h4 className="text-white font-bold mb-4">Hızlı Erişim</h4>
             <ul className="space-y-2">
               {[
                 { href: "/programlar", label: "Programlar" },
-                { href: "/egitmenler", label: "Egitmenler" },
+                { href: "/egitmenler", label: "Eğitmenler" },
                 { href: "/galeri", label: "Galeri" },
                 { href: "/veliler", label: "Veli Bilgilendirme" },
-                { href: "/hakkimizda", label: "Hakkimizda" },
-                { href: "/kayit", label: "Kayit ve Iletisim" },
+                { href: "/hakkimizda", label: "Hakkımızda" },
+                { href: "/kayit", label: "Kayıt ve İletişim" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-white/60 hover:text-primary-yellow transition-colors">
@@ -44,14 +44,14 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-bold mb-4">Iletisim</h4>
+            <h4 className="text-white font-bold mb-4">İletişim</h4>
             <div className="space-y-3 text-sm text-white/60">
               <p className="flex items-start gap-2">
                 <svg className="w-4 h-4 mt-0.5 text-primary-yellow shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                 </svg>
-                Atakoy Mah. Yildiz Cad. No:12 Bakirkoy / Istanbul
+                Atakoy Mah. Yıldız Cad. No:12 Bakırköy / İstanbul
               </p>
               <p className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-primary-yellow shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -70,11 +70,11 @@ export default function Footer() {
 
           {/* Hours & Social */}
           <div>
-            <h4 className="text-white font-bold mb-4">Calisma Saatleri</h4>
+            <h4 className="text-white font-bold mb-4">Çalışma Saatleri</h4>
             <div className="text-sm text-white/60 space-y-2 mb-6">
               <p>Pazartesi - Cuma: 07:30 - 18:00</p>
               <p>Cumartesi: 09:00 - 13:00 (Etkinlik)</p>
-              <p>Pazar: Kapali</p>
+              <p>Pazar: Kapalı</p>
             </div>
             <div className="flex gap-3">
               {["facebook", "instagram", "twitter"].map((social) => (
@@ -93,17 +93,17 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
-            &copy; 2026 Little Stars Kres ve Anaokulu. Tum haklari saklidir.
+            &copy; 2026 Little Stars Kreş ve Anaokulu. Tüm hakları saklıdır.
           </p>
           <div className="flex items-center gap-4 text-xs text-white/40">
             <span className="flex items-center gap-1">
               <svg className="w-3.5 h-3.5 text-primary-yellow" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
               </svg>
-              MEB Onayli
+              MEB Onaylı
             </span>
             <span>|</span>
-            <span>ISO 9001 Sertifikali</span>
+            <span>ISO 9001 Sertifikalı</span>
           </div>
         </div>
       </div>

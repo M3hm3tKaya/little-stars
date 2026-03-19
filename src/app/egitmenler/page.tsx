@@ -4,44 +4,44 @@ import SectionTitle from "@/components/SectionTitle";
 const teachers = [
   {
     name: "Elif Yilmaz",
-    title: "Kurucu & Mudur",
-    specialty: "Okul Oncesi Egitim Uzmani",
-    experience: "12 Yil Deneyim",
+    title: "Kurucu & Müdür",
+    specialty: "Okul Öncesi Eğitim Uzmanı",
+    experience: "12 Yıl Deneyim",
     bg: "bg-accent-pink",
   },
   {
     name: "Selin Kaya",
-    title: "Bas Egitmen",
-    specialty: "Cocuk Gelisimi Uzmani",
-    experience: "8 Yil Deneyim",
+    title: "Baş Eğitmen",
+    specialty: "Çocuk Gelişimi Uzmanı",
+    experience: "8 Yıl Deneyim",
     bg: "bg-accent-blue",
   },
   {
     name: "Aylin Demir",
-    title: "Mini Yildizlar Egitmeni",
-    specialty: "Bebek Gelisim Uzmani",
-    experience: "6 Yil Deneyim",
+    title: "Mini Yıldızlar Eğitmeni",
+    specialty: "Bebek Gelişim Uzmanı",
+    experience: "6 Yıl Deneyim",
     bg: "bg-accent-purple",
   },
   {
     name: "Burak Ozturk",
-    title: "Muzik Egitmeni",
+    title: "Müzik Eğitmeni",
     specialty: "Orff ve Suzuki Metodu",
-    experience: "10 Yil Deneyim",
+    experience: "10 Yıl Deneyim",
     bg: "bg-accent-green",
   },
   {
     name: "Merve Arslan",
-    title: "Sanat Egitmeni",
-    specialty: "Gorsel Sanatlar Uzmani",
-    experience: "7 Yil Deneyim",
+    title: "Sanat Eğitmeni",
+    specialty: "Görsel Sanatlar Uzmanı",
+    experience: "7 Yıl Deneyim",
     bg: "bg-primary-yellow",
   },
   {
     name: "Cansu Sahin",
-    title: "Ingilizce Egitmeni",
-    specialty: "Erken Cocukluk Ingilizce",
-    experience: "5 Yil Deneyim",
+    title: "İngilizce Eğitmeni",
+    specialty: "Erken Çocukluk İngilizce",
+    experience: "5 Yıl Deneyim",
     bg: "bg-accent-pink",
   },
 ];
@@ -56,8 +56,8 @@ export default function EgitmenlerPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle
             title="Uzman"
-            highlight="Egitmenlerimiz"
-            subtitle="Alaninda deneyimli, sertifikali ve sevecen egitmen kadromuz ile tanisin."
+            highlight="Eğitmenlerimiz"
+            subtitle="Alanında deneyimli, sertifikalı ve sevecen eğitmen kadromuz ile tanışın."
           />
         </div>
       </section>
@@ -89,13 +89,13 @@ export default function EgitmenlerPage() {
       <section className="bg-pastel-purple py-14 md:py-20 relative z-10">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
-            Ekibimize Katilmak Ister Misiniz?
+            Ekibimize Katılmak İster Misiniz?
           </h2>
           <p className="text-dark-navy/60 mb-8">
-            Cocuklara olan sevginizi mesleginize yansitmak icin bize basvurun.
+            Çocuklara olan sevginizi mesleğinize yansıtmak için bize başvurun.
           </p>
           <a href="mailto:kariyer@littlestars.com.tr" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md">
-            Basvuru Gonder
+            Başvuru Gönder
           </a>
         </div>
       </section>

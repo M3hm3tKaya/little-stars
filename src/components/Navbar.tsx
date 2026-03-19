@@ -6,10 +6,10 @@ import Link from "next/link";
 const navLinks = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/programlar", label: "Programlar" },
-  { href: "/egitmenler", label: "Egitmenler" },
+  { href: "/egitmenler", label: "Eğitmenler" },
   { href: "/galeri", label: "Galeri" },
   { href: "/veliler", label: "Veli Bilgilendirme" },
-  { href: "/hakkimizda", label: "Hakkimizda" },
+  { href: "/hakkimizda", label: "Hakkımızda" },
 ];
 
 export default function Navbar() {
@@ -47,7 +47,7 @@ export default function Navbar() {
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
-              Kayit Ol
+              Kayıt Ol
             </Link>
           </div>
 
@@ -87,7 +87,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="block text-center mt-3 btn-pill bg-primary-yellow text-dark-navy text-sm font-bold shadow-md"
             >
-              Kayit Ol
+              Kayıt Ol
             </Link>
           </div>
         </div>

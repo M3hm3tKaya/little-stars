@@ -7,8 +7,8 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { value: 150, suffix: "+", label: "Mezun", color: "text-primary-yellow" },
-  { value: 8, suffix: "", label: "Yil Deneyim", color: "text-accent-blue" },
-  { value: 12, suffix: "", label: "Uzman Egitmen", color: "text-accent-purple" },
+  { value: 8, suffix: "", label: "Yıl Deneyim", color: "text-accent-blue" },
+  { value: 12, suffix: "", label: "Uzman Eğitmen", color: "text-accent-purple" },
   { value: 100, suffix: "%", label: "Memnuniyet", color: "text-accent-green" },
 ];
 
@@ -58,13 +58,13 @@ function CounterCard({ value, suffix, label, color }: { value: number; suffix: s
 }
 
 const certificates = [
-  { name: "MEB Onayli Kurum", desc: "Milli Egitim Bakanligi tarafindan onayli egitim kurumu.", icon: "gov" },
-  { name: "ISO 9001:2015", desc: "Kalite Yonetim Sistemi sertifikasi.", icon: "iso" },
-  { name: "Hijyen Sertifikasi", desc: "Gida ve cevre hijyeni standartlarina uygunluk belgesi.", icon: "clean" },
-  { name: "Ilk Yardim Sertifikali", desc: "Tum personel ilk yardim sertifikasina sahiptir.", icon: "first-aid" },
+  { name: "MEB Onaylı Kurum", desc: "Milli Eğitim Bakanlığı tarafından onaylı eğitim kurumu.", icon: "gov" },
+  { name: "ISO 9001:2015", desc: "Kalite Yönetim Sistemi sertifikası.", icon: "iso" },
+  { name: "Hijyen Sertifikasi", desc: "Gıda ve çevre hijyeni standartlarına uygunluk belgesi.", icon: "clean" },
+  { name: "İlk Yardım Sertifikalı", desc: "Tüm personel ilk yardım sertifikasına sahiptir.", icon: "first-aid" },
 ];
 
-export default function HakkimizdaPage() {
+export default function HakkımızdaPage() {
   return (
     <>
       <FloatingShapes />
@@ -73,9 +73,9 @@ export default function HakkimizdaPage() {
       <section className="bg-gradient-to-br from-pastel-pink via-warm-white to-pastel-yellow py-16 md:py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle
-            title="Hakkimizda"
+            title="Hakkımızda"
             highlight=""
-            subtitle="8 yillik tecrubemiz, sevgi dolu yaklasimimiz ve uzman kadromuz ile cocuklarinizin yanindayiz."
+            subtitle="8 yıllık tecrübemiz, sevgi dolu yaklaşımımız ve uzman kadromuz ile çocuklarınızın yanındayız."
           />
         </div>
       </section>
@@ -100,22 +100,22 @@ export default function HakkimizdaPage() {
             {/* Story */}
             <div className="w-full lg:w-1/2">
               <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-6">
-                Kurulus <span className="text-primary-yellow">Hikayemiz</span>
+                Kuruluş <span className="text-primary-yellow">Hikayemiz</span>
               </h3>
               <div className="space-y-4 text-dark-navy/60 leading-relaxed">
                 <p>
-                  2018 yilinda, kendi cocuklarim icin aradighim ama bulamadigim
-                  bir egitim ortami hayalini gercege donusturmek icin yola ciktim.
-                  Little Stars, her cocugun bir yildiz olduguna inanan bir vizyonla kuruldu.
+                  2018 yilinda, kendi çocuklarım için aradığım ama bulamadığım
+                  bir eğitim ortamı hayalini gerçeğe dönüştürmek için yola çıktım.
+                  Little Stars, her çocuğun bir yıldız olduğuna inanan bir vizyonla kuruldu.
                 </p>
                 <p>
-                  Bakirkoy&apos;de kucuk bir sinifla baslayan yolculugumuz, bugun 12 uzman
-                  egitmen, modern tesisler ve yuzlerce mutlu aile ile devam ediyor.
-                  Her cocugun kendine ozgu parlakligini ortaya cikarmayi hedefliyoruz.
+                  Bakirkoy&apos;de küçük bir sınıfla başlayan yolculuğumuz, bugün 12 uzman
+                  eğitmen, modern tesisler ve yüzlerce mutlu aile ile devam ediyor.
+                  Her çocuğun kendine özgü parlaklığını ortaya çıkarmayı hedefliyoruz.
                 </p>
                 <p>
-                  Montessori, Reggio Emilia ve Turkiye Milli Egitim mufredat yaklasimlarini
-                  harmanlayarak, cocuklarimiza en iyi baslangici vermeye calisiyoruz.
+                  Montessori, Reggio Emilia ve Türkiye Milli Eğitim müfredat yaklaşımlarını
+                  harmanlayarak, çocuklarımıza en iyi başlangıcı vermeye çalışıyoruz.
                 </p>
               </div>
               <div className="mt-6 flex items-center gap-4">
@@ -126,7 +126,7 @@ export default function HakkimizdaPage() {
                 </div>
                 <div>
                   <p className="font-bold text-dark-navy">Elif Yilmaz</p>
-                  <p className="text-xs text-dark-navy/50">Kurucu & Mudur, Okul Oncesi Egitim Uzmani</p>
+                  <p className="text-xs text-dark-navy/50">Kurucu & Müdür, Okul Öncesi Eğitim Uzmanı</p>
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function HakkimizdaPage() {
       <PastelWave color="#FFFDF5" />
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Sertifika ve" highlight="Onaylar" subtitle="Kalite ve guvenlik standartlarimiz." />
+          <SectionTitle title="Sertifika ve" highlight="Onaylar" subtitle="Kalite ve güvenlik standartlarımız." />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {certificates.map((cert, i) => (
               <div key={i} className="bg-white rounded-[20px] p-6 card-hover text-center shadow-sm">
@@ -174,16 +174,16 @@ export default function HakkimizdaPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle title="Misyonumuz" />
           <p className="text-dark-navy/70 leading-relaxed text-lg">
-            Her cocugun benzersiz bir yildiz olduguna inaniyoruz. Amacimiz,
-            guvende, sevgi dolu ve stimule edici bir ortamda cocuklarin
-            fiziksel, duygusal, sosyal ve bilissel gelisimlerini desteklemek,
-            onlari hayata en iyi sekilde hazirlamaktir.
+            Her çocuğun benzersiz bir yıldız olduğuna inanıyoruz. Amacimiz,
+            güvende, sevgi dolu ve stimüle edici bir ortamda çocukların
+            fiziksel, duygusal, sosyal ve bilişsel gelişimlerini desteklemek,
+            onları hayata en iyi şekilde hazırlamaktır.
           </p>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { title: "Sevgi", desc: "Her cocuga sartksiz sevgi ve saygi.", bg: "bg-pastel-pink" },
-              { title: "Guven", desc: "Aileler icin %100 guvenilir ortam.", bg: "bg-pastel-blue" },
-              { title: "Gelisim", desc: "Butunsel gelisim odakli egitim.", bg: "bg-pastel-green" },
+              { title: "Sevgi", desc: "Her çocuğa şartsız sevgi ve saygı.", bg: "bg-pastel-pink" },
+              { title: "Guven", desc: "Aileler için %100 güvenilir ortam.", bg: "bg-pastel-blue" },
+              { title: "Gelisim", desc: "Bütünsel gelişim odaklı eğitim.", bg: "bg-pastel-green" },
             ].map((v, i) => (
               <div key={i} className={`${v.bg} rounded-[20px] p-6`}>
                 <h4 className="font-bold text-dark-navy mb-2">{v.title}</h4>

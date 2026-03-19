@@ -10,8 +10,8 @@ const values = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    title: "Guvenli Ortam",
-    desc: "7/24 kamerali, MEB onayli, hijyenik ve cocuk dostu mekanlarimiz ile yavrulariniz guvende.",
+    title: "Güvenli Ortam",
+    desc: "7/24 kameralı, MEB onaylı, hijyenik ve çocuk dostu mekanlarımız ile yavrularınız güvende.",
     color: "bg-pastel-blue",
     accent: "text-accent-blue",
   },
@@ -21,8 +21,8 @@ const values = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "Eglenceli Egitim",
-    desc: "Oyun temelli egitim programlarimiz ile cocuklariniz eglenerek ogrenir.",
+    title: "Eğlenceli Eğitim",
+    desc: "Oyun temelli eğitim programlarımız ile çocuklarınız eğlenerek öğrenir.",
     color: "bg-pastel-yellow",
     accent: "text-primary-yellow",
   },
@@ -33,41 +33,41 @@ const values = [
       </svg>
     ),
     title: "Uzman Kadro",
-    desc: "Alaninda deneyimli, sertifikali egitmenlerimiz cocuklarinizin gelisimini yakindan takip eder.",
+    desc: "Alanında deneyimli, sertifikalı eğitmenlerimiz çocuklarınızın gelişimini yakından takip eder.",
     color: "bg-pastel-purple",
     accent: "text-accent-purple",
   },
 ];
 
 const programs = [
-  { name: "Mini Yildizlar", age: "1-2 Yas", desc: "Duyusal kesif, motor gelisim, guvenli baglanma.", border: "border-l-accent-pink", bg: "bg-pastel-pink" },
-  { name: "Kesficiler", age: "2-3 Yas", desc: "Dil gelisimi, sosyal beceriler, yaratici oyun.", border: "border-l-accent-green", bg: "bg-pastel-green" },
-  { name: "Yaraticilar", age: "3-4 Yas", desc: "Sanat, muzik, erken matematik ve fen kavramlari.", border: "border-l-accent-purple", bg: "bg-pastel-purple" },
-  { name: "Okul Oncesi", age: "4-6 Yas", desc: "Okula hazirlik, okuma yazmaya giris, proje bazli ogrenme.", border: "border-l-accent-blue", bg: "bg-pastel-blue" },
+  { name: "Mini Yıldızlar", age: "1-2 Yas", desc: "Duyusal keşif, motor gelişim, güvenli bağlanma.", border: "border-l-accent-pink", bg: "bg-pastel-pink" },
+  { name: "Keşfediciler", age: "2-3 Yas", desc: "Dil gelişimi, sosyal beceriler, yaratıcı oyun.", border: "border-l-accent-green", bg: "bg-pastel-green" },
+  { name: "Yaratıcılar", age: "3-4 Yas", desc: "Sanat, müzik, erken matematik ve fen kavramları.", border: "border-l-accent-purple", bg: "bg-pastel-purple" },
+  { name: "Okul Öncesi", age: "4-6 Yas", desc: "Okula hazırlık, okuma yazmaya giriş, proje bazlı öğrenme.", border: "border-l-accent-blue", bg: "bg-pastel-blue" },
 ];
 
 const dailyFlow = [
-  { time: "08:00", activity: "Karsilama ve Serbest Oyun" },
-  { time: "09:00", activity: "Kahvalti" },
-  { time: "09:30", activity: "Cember Zamani" },
-  { time: "10:00", activity: "Egitim Aktiviteleri" },
-  { time: "11:00", activity: "Bahce / Fiziksel Aktivite" },
-  { time: "12:00", activity: "Ogle Yemegi" },
+  { time: "08:00", activity: "Karşılama ve Serbest Oyun" },
+  { time: "09:00", activity: "Kahvaltı" },
+  { time: "09:30", activity: "Çember Zamanı" },
+  { time: "10:00", activity: "Eğitim Aktiviteleri" },
+  { time: "11:00", activity: "Bahçe / Fiziksel Aktivite" },
+  { time: "12:00", activity: "Öğle Yemeği" },
   { time: "13:00", activity: "Uyku / Dinlenme" },
-  { time: "14:30", activity: "Sanat ve Muzik" },
-  { time: "15:30", activity: "Ikindi Kahvaltisi" },
-  { time: "16:00-17:00", activity: "Serbest Oyun ve Ugurlama" },
+  { time: "14:30", activity: "Sanat ve Müzik" },
+  { time: "15:30", activity: "İkindi Kahvaltısı" },
+  { time: "16:00-17:00", activity: "Serbest Oyun ve Uğurlama" },
 ];
 
 const testimonials = [
-  { name: "Ayse K.", child: "Elif, 4 yas", text: "Kizim her sabah heyecanla gelmeyi bekliyor. Egitmenler cok ilgili ve sevecen.", bg: "bg-pastel-pink" },
-  { name: "Mehmet D.", child: "Can, 3 yas", text: "Oglumun gelisimindeki ilerlemeyi gormek bizi cok mutlu ediyor. Harika bir ekip.", bg: "bg-pastel-blue" },
-  { name: "Zeynep A.", child: "Mira, 5 yas", text: "Temizlik ve guvenlik konusunda cok titizler. Gonul rahatligi ile birakiyorum.", bg: "bg-pastel-green" },
+  { name: "Ayse K.", child: "Elif, 4 yas", text: "Kızım her sabah heyecanla gelmeyi bekliyor. Eğitmenler çok ilgili ve sevecen.", bg: "bg-pastel-pink" },
+  { name: "Mehmet D.", child: "Can, 3 yas", text: "Oğlumun gelişimindeki ilerlemeyi görmek bizi çok mutlu ediyor. Harika bir ekip.", bg: "bg-pastel-blue" },
+  { name: "Zeynep A.", child: "Mira, 5 yas", text: "Temizlik ve güvenlik konusunda çok titizler. Gönül rahatlığı ile bırakıyorum.", bg: "bg-pastel-green" },
 ];
 
 const galleryImages = [
-  { title: "Siniflarimiz", bg: "bg-accent-blue" },
-  { title: "Bahce Alanimiz", bg: "bg-accent-green" },
+  { title: "Sınıflarımız", bg: "bg-accent-blue" },
+  { title: "Bahçe Alanımız", bg: "bg-accent-green" },
   { title: "Etkinlikler", bg: "bg-accent-pink" },
   { title: "Yemekhane", bg: "bg-primary-yellow" },
 ];
@@ -88,9 +88,9 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-dark-navy leading-tight mb-6">
-            Kucuk{" "}
+            Küçük{" "}
             <span className="text-primary-yellow relative inline-block">
-              Yildizlar
+              Yıldızlar
               <svg className="absolute -top-4 -right-6 w-8 h-8 text-primary-yellow opacity-60" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
@@ -100,8 +100,8 @@ export default function HomePage() {
           </h1>
 
           <p className="max-w-2xl mx-auto text-base md:text-lg text-dark-navy/60 mb-8 leading-relaxed">
-            Cocugunuzun mutlu, guvenli ve yaratici bir ortamda buyumesi icin
-            uzman kadromuz ve modern egitim anlayisimizla yaninizdayiz.
+            Çocuğunuzun mutlu, güvenli ve yaratıcı bir ortamda büyümesi için
+            uzman kadromuz ve modern eğitim anlayışımızla yanınızdayız.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -109,10 +109,10 @@ export default function HomePage() {
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
-              Hemen Kayit Ol
+              Hemen Kayıt Ol
             </Link>
             <Link href="/programlar" className="btn-pill bg-white text-dark-navy font-bold shadow-md border border-dark-navy/10 text-base">
-              Programlari Incele
+              Programları İncele
             </Link>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function HomePage() {
       <PastelWave color="#FFFDF5" />
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Neden" highlight="Little Stars?" subtitle="Cocuklarinizin en degerli yillarini bize emanet etmeniz icin 3 onemli neden." />
+          <SectionTitle title="Neden" highlight="Little Stars?" subtitle="Çocuklarınızın en değerli yıllarını bize emanet etmeniz için 3 önemli neden." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {values.map((v, i) => (
               <div key={i} className={`${v.color} rounded-[20px] p-8 card-hover text-center`}>
@@ -141,7 +141,7 @@ export default function HomePage() {
       <PastelWave color="#EEF3FF" />
       <section className="py-16 md:py-24 bg-pastel-blue relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Yas Gruplarina Gore" highlight="Programlar" subtitle="Her yas grubuna ozel, gelisim odakli egitim programlari." />
+          <SectionTitle title="Yaş Gruplarına Göre" highlight="Programlar" subtitle="Her yaş grubuna özel, gelişim odaklı eğitim programları." />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {programs.map((p, i) => (
               <div key={i} className={`bg-white rounded-[20px] p-6 border-l-4 ${p.border} card-hover`}>
@@ -155,7 +155,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-10">
             <Link href="/programlar" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md">
-              Tum Programlari Gor
+              Tüm Programları Gör
             </Link>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
       <PastelWave color="#FFFDF5" />
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Gunluk" highlight="Akis" subtitle="Cocuklarimizin bir gunu nasil geciyor?" />
+          <SectionTitle title="Günlük" highlight="Akış" subtitle="Çocuklarımızın bir günü nasıl geçiyor?" />
 
           {/* Desktop horizontal */}
           <div className="hidden md:flex items-start justify-between gap-2 overflow-x-auto pb-4">
@@ -223,7 +223,7 @@ export default function HomePage() {
       <PastelWave color="#FFFDF5" />
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Tesislerimiz" subtitle="Modern ve cocuk dostu alanlarimiz." />
+          <SectionTitle title="Tesislerimiz" subtitle="Modern ve çocuk dostu alanlarımız." />
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {galleryImages.map((img, i) => (
               <div key={i} className={`${img.bg} rounded-[20px] aspect-[4/3] flex items-center justify-center card-hover cursor-pointer`}>
@@ -238,7 +238,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-10">
             <Link href="/galeri" className="btn-pill bg-white text-dark-navy font-bold shadow-md border border-dark-navy/10">
-              Tum Galeri
+              Tüm Galeri
             </Link>
           </div>
         </div>
@@ -248,14 +248,14 @@ export default function HomePage() {
       <section className="bg-gradient-to-r from-primary-yellow to-[#FFD060] py-14 md:py-20 relative z-10">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
-            Cocugunuz Icin En Iyi Baslangic
+            Çocuğunuz İçin En İyi Başlangıç
           </h2>
           <p className="text-dark-navy/70 mb-8 text-base md:text-lg">
-            Hemen kayit olun, okulumuzu ziyaret edin ve farki yerinde gorun!
+            Hemen kayıt olun, okulumuzu ziyaret edin ve farkı yerinde görün!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/kayit" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base">
-              Kayit Formu
+              Kayıt Formu
             </Link>
             <Link href="/kayit" className="btn-pill bg-white text-dark-navy font-bold shadow-md text-base">
               Tur Randevusu Al

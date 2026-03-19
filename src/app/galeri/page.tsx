@@ -4,28 +4,28 @@ import { useState } from "react";
 import FloatingShapes from "@/components/FloatingShapes";
 import SectionTitle from "@/components/SectionTitle";
 
-const categories = ["Tumu", "Siniflar", "Bahce", "Etkinlikler", "Yemek", "Kutlamalar"];
+const categories = ["Tümü", "Sınıflar", "Bahçe", "Etkinlikler", "Yemek", "Kutlamalar"];
 
 const galleryItems = [
-  { id: 1, category: "Siniflar", title: "Mini Yildizlar Sinifi", bg: "bg-accent-pink", height: "h-48" },
-  { id: 2, category: "Bahce", title: "Dis Mekan Oyun Alani", bg: "bg-accent-green", height: "h-64" },
-  { id: 3, category: "Etkinlikler", title: "Sanat Atolyesi", bg: "bg-accent-purple", height: "h-52" },
-  { id: 4, category: "Yemek", title: "Organik Kahvalti", bg: "bg-primary-yellow", height: "h-48" },
-  { id: 5, category: "Kutlamalar", title: "Dogum Gunu Partisi", bg: "bg-accent-pink", height: "h-56" },
-  { id: 6, category: "Siniflar", title: "Kesficiler Sinifi", bg: "bg-accent-blue", height: "h-52" },
-  { id: 7, category: "Bahce", title: "Kum Havuzu", bg: "bg-accent-green", height: "h-48" },
-  { id: 8, category: "Etkinlikler", title: "Drama Gosterisi", bg: "bg-accent-purple", height: "h-60" },
-  { id: 9, category: "Yemek", title: "Ogle Yemegi", bg: "bg-primary-yellow", height: "h-48" },
-  { id: 10, category: "Kutlamalar", title: "23 Nisan Kutlamasi", bg: "bg-accent-pink", height: "h-56" },
-  { id: 11, category: "Siniflar", title: "Yaraticilar Atollye", bg: "bg-accent-blue", height: "h-52" },
+  { id: 1, category: "Sınıflar", title: "Mini Yıldızlar Sınıfı", bg: "bg-accent-pink", height: "h-48" },
+  { id: 2, category: "Bahçe", title: "Dış Mekan Oyun Alanı", bg: "bg-accent-green", height: "h-64" },
+  { id: 3, category: "Etkinlikler", title: "Sanat Atölyesi", bg: "bg-accent-purple", height: "h-52" },
+  { id: 4, category: "Yemek", title: "Organik Kahvaltı", bg: "bg-primary-yellow", height: "h-48" },
+  { id: 5, category: "Kutlamalar", title: "Doğum Günü Partisi", bg: "bg-accent-pink", height: "h-56" },
+  { id: 6, category: "Sınıflar", title: "Keşfediciler Sınıfı", bg: "bg-accent-blue", height: "h-52" },
+  { id: 7, category: "Bahçe", title: "Kum Havuzu", bg: "bg-accent-green", height: "h-48" },
+  { id: 8, category: "Etkinlikler", title: "Drama Gösterisi", bg: "bg-accent-purple", height: "h-60" },
+  { id: 9, category: "Yemek", title: "Öğle Yemeği", bg: "bg-primary-yellow", height: "h-48" },
+  { id: 10, category: "Kutlamalar", title: "23 Nisan Kutlaması", bg: "bg-accent-pink", height: "h-56" },
+  { id: 11, category: "Sınıflar", title: "Yaratıcılar Atölyesi", bg: "bg-accent-blue", height: "h-52" },
   { id: 12, category: "Etkinlikler", title: "Bilim Deneyleri", bg: "bg-accent-green", height: "h-48" },
 ];
 
 export default function GaleriPage() {
-  const [activeFilter, setActiveFilter] = useState("Tumu");
+  const [activeFilter, setActiveFilter] = useState("Tümü");
   const [lightbox, setLightbox] = useState<number | null>(null);
 
-  const filtered = activeFilter === "Tumu"
+  const filtered = activeFilter === "Tümü"
     ? galleryItems
     : galleryItems.filter((item) => item.category === activeFilter);
 

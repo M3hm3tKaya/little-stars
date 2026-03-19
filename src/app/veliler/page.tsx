@@ -6,20 +6,20 @@ import PastelWave from "@/components/PastelWave";
 import SectionTitle from "@/components/SectionTitle";
 
 const registrationSteps = [
-  { step: 1, title: "On Basvuru", desc: "Online formu doldurun veya bizi arayin.", icon: "form" },
-  { step: 2, title: "Okul Turu", desc: "Tesislerimizi ziyaret edin, egitmenlerle tanisin.", icon: "tour" },
-  { step: 3, title: "Evrak Teslimi", desc: "Gerekli belgeleri tamamlayin.", icon: "docs" },
-  { step: 4, title: "Kayit Onay", desc: "Kaydiniz onaylanir, uyum sureci baslar.", icon: "check" },
+  { step: 1, title: "Ön Başvuru", desc: "Online formu doldurun veya bizi arayın.", icon: "form" },
+  { step: 2, title: "Okul Turu", desc: "Tesislerimizi ziyaret edin, eğitmenlerle tanışın.", icon: "tour" },
+  { step: 3, title: "Evrak Teslimi", desc: "Gerekli belgeleri tamamlayın.", icon: "docs" },
+  { step: 4, title: "Kayıt Onay", desc: "Kaydınız onaylanır, uyum süreci başlar.", icon: "check" },
 ];
 
 const documents = [
-  "Nufus cuzdani fotokopisi (veli + cocuk)",
-  "4 adet vesikalik fotograf",
-  "Asi karti fotokopisi",
-  "Saglik raporu (son 1 ay)",
-  "Ikametgah belgesi",
+  "Nüfus cüzdanı fotokopisi (veli + çocuk)",
+  "4 adet vesikalık fotoğraf",
+  "Aşı kartı fotokopisi",
+  "Sağlık raporu (son 1 ay)",
+  "İkametgah belgesi",
   "Kan grubu belgesi",
-  "Alerji / ozel durum bilgi formu",
+  "Alerji / özel durum bilgi formu",
 ];
 
 const weeklyMenu = [
@@ -30,19 +30,19 @@ const weeklyMenu = [
     snack: "Meyve tabagi, kraker",
   },
   {
-    day: "Sali",
+    day: "Salı",
     breakfast: "Yumurta, bal, tereyagi, ekmek, sut",
     lunch: "Sehriye corbasi, makarna, koftee, cacik",
     snack: "Kurabiye, ayran",
   },
   {
-    day: "Carsamba",
+    day: "Çarşamba",
     breakfast: "Kasar peyniri, recel, ekmek, sut",
     lunch: "Domates corbasi, bulgur pilavi, et sote, salata",
     snack: "Muzlu puding",
   },
   {
-    day: "Persembe",
+    day: "Perşembe",
     breakfast: "Peynir, zeytin, salatalik, ekmek, sut",
     lunch: "Tarhana corbasi, pilav, balık, havuc salata",
     snack: "Meyve suyu, pogaca",
@@ -56,16 +56,16 @@ const weeklyMenu = [
 ];
 
 const faqItems = [
-  { q: "Kayit icin yas siniri nedir?", a: "1 yas ile 6 yas arasi cocuklari kabul ediyoruz. Her yas grubuna ozel programlarimiz vardir." },
-  { q: "Calisma saatleriniz nedir?", a: "Hafta ici 07:30 - 18:00 arasi hizmet veriyoruz. Cumartesi gunleri 09:00 - 13:00 arasi ozel etkinlikler duzenliyoruz." },
-  { q: "Beslenme nasil saglaniyor?", a: "Diyetisyen tarafindan hazirlanan haftalik menu uygulanir. Organik ve mevsimsel urunler tercih edilir. Alerji durumunda ozel menu hazirlanir." },
-  { q: "Guvenlik onlemleri nelerdir?", a: "7/24 kamera sistemi, kimlik kontroller giris sistemi, ilk yardim sertifikali personel ve duzenli tatbikatlar yapilmaktadir." },
-  { q: "Uyum sureci nasil isliyor?", a: "Ilk hafta veli esliginde kademeli gecis programi uygulanir. Cocugunuzun uyumuna gore sure ayarlanir." },
-  { q: "Servis hizmetiniz var mi?", a: "Bakirkoy ve cevre ilcelere servis hizmetimiz mevcuttur. Detayli bilgi icin bizi arayabilirsiniz." },
-  { q: "Veli-okul iletisimi nasil saglaniyor?", a: "Gunluk dijital rapor, aylik veli toplantilari, yillik gelisim raporlari ve WhatsApp grubu ile surekli iletisim halindeyiz." },
-  { q: "Ozel gereksinimli cocuklar icin programiniz var mi?", a: "Evet, uzman egitmenlerimiz esliginde bireysel egitim planlari hazirlanir. Gerektiginde dis uzmanlarla is birligi yapilir." },
-  { q: "Tatil gunleri kapali misiniz?", a: "Resmi tatillerde kapaliyiz. Yaz doneminde ozel yaz okulu programimiz devam eder." },
-  { q: "Ucretlendirme nasil yapiliyor?", a: "Aylik ucretlendirme uygulanir. Kardes indirimi ve erken kayit indirimleri mevcuttur. Detayli bilgi icin gorusme talep edebilirsiniz." },
+  { q: "Kayıt için yaş sınırı nedir?", a: "1 yaş ile 6 yaş arası çocukları kabul ediyoruz. Her yaş grubuna özel programlarımız vardır." },
+  { q: "Çalışma saatleriniz nedir?", a: "Hafta içi 07:30 - 18:00 arası hizmet veriyoruz. Cumartesi günleri 09:00 - 13:00 arası özel etkinlikler düzenliyoruz." },
+  { q: "Beslenme nasıl sağlanıyor?", a: "Diyetisyen tarafından hazırlanan haftalık menü uygulanır. Organik ve mevsimsel ürünler tercih edilir. Alerji durumunda özel menü hazırlanır." },
+  { q: "Güvenlik önlemleri nelerdir?", a: "7/24 kamera sistemi, kimlik kontrollü giriş sistemi, ilk yardım sertifikalı personel ve düzenli tatbikatlar yapılmaktadır." },
+  { q: "Uyum süreci nasıl işliyor?", a: "İlk hafta veli eşliğinde kademeli geçiş programı uygulanır. Çocuğunuzun uyumuna göre süre ayarlanır." },
+  { q: "Servis hizmetiniz var mı?", a: "Bakırköy ve çevre ilçelere servis hizmetimiz mevcuttur. Detaylı bilgi için bizi arayabilirsiniz." },
+  { q: "Veli-okul iletişimi nasıl sağlanıyor?", a: "Günlük dijital rapor, aylık veli toplantıları, yıllık gelişim raporları ve WhatsApp grubu ile sürekli iletişim halindeyiz." },
+  { q: "Özel gereksinimli çocuklar için programınız var mı?", a: "Evet, uzman eğitmenlerimiz eşliğinde bireysel eğitim planları hazırlanır. Gerektiğinde dış uzmanlarla iş birliği yapılır." },
+  { q: "Tatil günleri kapalı mısınız?", a: "Resmi tatillerde kapalıyız. Yaz döneminde özel yaz okulu programımız devam eder." },
+  { q: "Ücretlendirme nasıl yapılıyor?", a: "Aylık ücretlendirme uygulanır. Kardeş indirimi ve erken kayıt indirimleri mevcuttur. Detaylı bilgi için görüşme talep edebilirsiniz." },
 ];
 
 export default function VelilerPage() {
@@ -81,7 +81,7 @@ export default function VelilerPage() {
           <SectionTitle
             title="Veli"
             highlight="Bilgilendirme"
-            subtitle="Kayit sureci, gerekli evraklar, haftalik menu ve sik sorulan sorular hakkinda bilgi alin."
+            subtitle="Kayıt süreci, gerekli evraklar, haftalık menü ve sık sorulan sorular hakkında bilgi alın."
           />
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function VelilerPage() {
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-10 text-center">
-            Kayit <span className="text-primary-yellow">Sureci</span>
+            Kayıt Süreci
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {registrationSteps.map((s, i) => (
@@ -144,7 +144,7 @@ export default function VelilerPage() {
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-10 text-center">
-            Haftalik <span className="text-primary-yellow">Menu</span>
+            Haftalık <span className="text-primary-yellow">Menu</span>
           </h3>
           <div className="overflow-x-auto rounded-[20px] shadow-sm">
             <table className="w-full bg-white rounded-[20px] overflow-hidden">
@@ -152,8 +152,8 @@ export default function VelilerPage() {
                 <tr className="bg-primary-yellow/10">
                   <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Gun</th>
                   <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Kahvalti</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Ogle Yemegi</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Ara Ogun</th>
+                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Öğle Yemeği</th>
+                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Ara Öğün</th>
                 </tr>
               </thead>
               <tbody>
@@ -169,7 +169,7 @@ export default function VelilerPage() {
             </table>
           </div>
           <p className="mt-4 text-xs text-dark-navy/40 text-center">
-            * Menu diyetisyen onayli olup mevsime gore degisiklik gosterebilir. Alerjik durumlar icin ozel menu hazirlanir.
+            * Menü diyetisyen onaylı olup mevsime göre değişiklik gösterebilir. Alerjik durumlar için özel menü hazırlanır.
           </p>
         </div>
       </section>
@@ -179,7 +179,7 @@ export default function VelilerPage() {
       <section className="py-16 md:py-24 bg-pastel-purple relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-10 text-center">
-            Sik Sorulan <span className="text-primary-yellow">Sorular</span>
+            Sıkça Sorulan <span className="text-primary-yellow">Sorular</span>
           </h3>
           <div className="space-y-3">
             {faqItems.map((faq, i) => (

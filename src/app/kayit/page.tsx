@@ -5,7 +5,7 @@ import FloatingShapes from "@/components/FloatingShapes";
 import PastelWave from "@/components/PastelWave";
 import SectionTitle from "@/components/SectionTitle";
 
-export default function KayitPage() {
+export default function KayıtPage() {
   const [formData, setFormData] = useState({
     parentName: "",
     phone: "",
@@ -34,12 +34,12 @@ export default function KayitPage() {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Kayit formunuz alindi! En kisa surede sizinle iletisime gececegiz.");
+    alert("Kayıt formunuz alındı! En kısa sürede sizinle iletişime geçeceğiz.");
   };
 
   const handleTourSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Tur randevunuz alindi! Onay icin sizinle iletisime gececegiz.");
+    alert("Tur randevunuz alındı! Onay için sizinle iletişime geçeceğiz.");
   };
 
   return (
@@ -50,9 +50,9 @@ export default function KayitPage() {
       <section className="bg-gradient-to-br from-pastel-yellow via-warm-white to-pastel-pink py-16 md:py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle
-            title="Kayit &"
-            highlight="Iletisim"
-            subtitle="Cocugunuz icin en iyi baslangici yapmak icin hemen basvurun veya bize ulasin."
+            title="Kayıt &"
+            highlight="İletişim"
+            subtitle="Çocuğunuz için en iyi başlangıcı yapmak için hemen başvurun veya bize ulaşın."
           />
         </div>
       </section>
@@ -65,12 +65,12 @@ export default function KayitPage() {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-[20px] p-8 shadow-sm">
                 <h3 className="text-xl font-extrabold text-dark-navy mb-6">
-                  Kayit <span className="text-primary-yellow">Formu</span>
+                  Kayıt <span className="text-primary-yellow">Formu</span>
                 </h3>
                 <form onSubmit={handleFormSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Veli Adi Soyadi *</label>
+                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Veli Adı Soyadı *</label>
                       <input
                         type="text"
                         name="parentName"
@@ -78,7 +78,7 @@ export default function KayitPage() {
                         value={formData.parentName}
                         onChange={handleFormChange}
                         className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
-                        placeholder="Adi Soyadi"
+                        placeholder="Adı Soyadı"
                       />
                     </div>
                     <div>
@@ -110,7 +110,7 @@ export default function KayitPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Cocuk Adi *</label>
+                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Çocuk Adı *</label>
                       <input
                         type="text"
                         name="childName"
@@ -118,11 +118,11 @@ export default function KayitPage() {
                         value={formData.childName}
                         onChange={handleFormChange}
                         className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
-                        placeholder="Cocuk Adi"
+                        placeholder="Çocuk Adı"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Dogum Tarihi *</label>
+                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Doğum Tarihi *</label>
                       <input
                         type="date"
                         name="birthDate"
@@ -136,7 +136,7 @@ export default function KayitPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Yas Grubu *</label>
+                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Yaş Grubu *</label>
                       <select
                         name="ageGroup"
                         required
@@ -144,26 +144,26 @@ export default function KayitPage() {
                         onChange={handleFormChange}
                         className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                       >
-                        <option value="">Seciniz</option>
-                        <option value="1-2">Mini Yildizlar (1-2 Yas)</option>
-                        <option value="2-3">Kesficiler (2-3 Yas)</option>
-                        <option value="3-4">Yaraticilar (3-4 Yas)</option>
-                        <option value="4-6">Okul Oncesi (4-6 Yas)</option>
+                        <option value="">Seçiniz</option>
+                        <option value="1-2">Mini Yıldızlar (1-2 Yaş)</option>
+                        <option value="2-3">Keşfediciler (2-3 Yaş)</option>
+                        <option value="3-4">Yaratıcılar (3-4 Yaş)</option>
+                        <option value="4-6">Okul Öncesi (4-6 Yaş)</option>
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Baslangic Tercihi</label>
+                      <label className="block text-sm font-semibold text-dark-navy mb-1.5">Başlangıç Tercihi</label>
                       <select
                         name="startPreference"
                         value={formData.startPreference}
                         onChange={handleFormChange}
                         className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                       >
-                        <option value="">Seciniz</option>
+                        <option value="">Seçiniz</option>
                         <option value="hemen">Hemen</option>
-                        <option value="1ay">1 Ay Icinde</option>
-                        <option value="gelecek-donem">Gelecek Donem</option>
-                        <option value="eylul">Eylul 2026</option>
+                        <option value="1ay">1 Ay İçinde</option>
+                        <option value="gelecek-donem">Gelecek Dönem</option>
+                        <option value="eylul">Eylül 2026</option>
                       </select>
                     </div>
                   </div>
@@ -176,7 +176,7 @@ export default function KayitPage() {
                       value={formData.message}
                       onChange={handleFormChange}
                       className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white resize-none"
-                      placeholder="Eklemek istediginiz bilgiler..."
+                      placeholder="Eklemek istediğiniz bilgiler..."
                     />
                   </div>
 
@@ -187,7 +187,7 @@ export default function KayitPage() {
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
-                    Basvuruyu Gonder
+                    Başvuruyu Gönder
                   </button>
                 </form>
               </div>
@@ -209,7 +209,7 @@ export default function KayitPage() {
                       value={tourData.name}
                       onChange={handleTourChange}
                       className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
-                      placeholder="Adiniz Soyadiniz"
+                      placeholder="Adınız Soyadınız"
                     />
                   </div>
                   <div>
@@ -241,7 +241,7 @@ export default function KayitPage() {
                       onChange={handleTourChange}
                       className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
                     >
-                      <option value="">Saat Seciniz</option>
+                      <option value="">Saat Seçiniz</option>
                       <option value="10:00">10:00</option>
                       <option value="11:00">11:00</option>
                       <option value="14:00">14:00</option>
@@ -261,7 +261,7 @@ export default function KayitPage() {
               {/* Contact Info */}
               <div className="bg-white rounded-[20px] p-6 shadow-sm">
                 <h3 className="text-lg font-extrabold text-dark-navy mb-4">
-                  Iletisim <span className="text-primary-yellow">Bilgileri</span>
+                  İletişim <span className="text-primary-yellow">Bilgileri</span>
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -273,7 +273,7 @@ export default function KayitPage() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-dark-navy">Adres</p>
-                      <p className="text-xs text-dark-navy/60">Atakoy Mah. Yildiz Cad. No:12 Bakirkoy / Istanbul</p>
+                      <p className="text-xs text-dark-navy/60">Atakoy Mah. Yıldız Cad. No:12 Bakırköy / İstanbul</p>
                     </div>
                   </div>
 
@@ -309,7 +309,7 @@ export default function KayitPage() {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-sm font-bold text-dark-navy">Calisma Saatleri</p>
+                      <p className="text-sm font-bold text-dark-navy">Çalışma Saatleri</p>
                       <p className="text-xs text-dark-navy/60">Pzt - Cum: 07:30 - 18:00</p>
                       <p className="text-xs text-dark-navy/60">Cmt: 09:00 - 13:00 (Etkinlik)</p>
                     </div>
@@ -337,10 +337,10 @@ export default function KayitPage() {
       <section className="bg-gradient-to-r from-primary-yellow to-[#FFD060] py-14 md:py-20 relative z-10">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
-            Hala Sorulariniz mi Var?
+            Hala Sorularınız mı Var?
           </h2>
           <p className="text-dark-navy/70 mb-8">
-            Bizi arayin, size yardimci olalim!
+            Bizi arayın, size yardımcı olalım!
           </p>
           <a href="tel:02125551234" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
