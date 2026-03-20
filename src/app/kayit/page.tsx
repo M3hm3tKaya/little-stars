@@ -63,7 +63,7 @@ export default function KayıtPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Registration Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-[20px] p-8 shadow-sm">
+              <div className="bg-white rounded-[20px] p-4 sm:p-6 md:p-8 shadow-sm">
                 <h3 className="text-xl font-extrabold text-dark-navy mb-6">
                   Kayıt <span className="text-primary-yellow">Formu</span>
                 </h3>
@@ -77,7 +77,7 @@ export default function KayıtPage() {
                         required
                         value={formData.parentName}
                         onChange={handleFormChange}
-                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
+                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                         placeholder="Adı Soyadı"
                       />
                     </div>
@@ -89,7 +89,7 @@ export default function KayıtPage() {
                         required
                         value={formData.phone}
                         onChange={handleFormChange}
-                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
+                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                         placeholder="0555 123 45 67"
                       />
                     </div>
@@ -103,7 +103,7 @@ export default function KayıtPage() {
                       required
                       value={formData.email}
                       onChange={handleFormChange}
-                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
+                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                       placeholder="ornek@email.com"
                     />
                   </div>
@@ -117,7 +117,7 @@ export default function KayıtPage() {
                         required
                         value={formData.childName}
                         onChange={handleFormChange}
-                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
+                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                         placeholder="Çocuk Adı"
                       />
                     </div>
@@ -129,7 +129,7 @@ export default function KayıtPage() {
                         required
                         value={formData.birthDate}
                         onChange={handleFormChange}
-                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
+                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                       />
                     </div>
                   </div>
@@ -142,7 +142,7 @@ export default function KayıtPage() {
                         required
                         value={formData.ageGroup}
                         onChange={handleFormChange}
-                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
+                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                       >
                         <option value="">Seçiniz</option>
                         <option value="1-2">Mini Yıldızlar (1-2 Yaş)</option>
@@ -157,7 +157,7 @@ export default function KayıtPage() {
                         name="startPreference"
                         value={formData.startPreference}
                         onChange={handleFormChange}
-                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
+                        className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white"
                       >
                         <option value="">Seçiniz</option>
                         <option value="hemen">Hemen</option>
@@ -175,14 +175,14 @@ export default function KayıtPage() {
                       rows={4}
                       value={formData.message}
                       onChange={handleFormChange}
-                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white resize-none"
+                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-warm-white resize-none"
                       placeholder="Eklemek istediğiniz bilgiler..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md w-full sm:w-auto text-base justify-center"
+                    className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md w-full sm:w-auto text-base justify-center min-h-[48px]"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
@@ -196,7 +196,7 @@ export default function KayıtPage() {
             {/* Tour Form + Contact Info */}
             <div className="space-y-6">
               {/* Tour Appointment */}
-              <div className="bg-pastel-blue rounded-[20px] p-6">
+              <div className="bg-pastel-blue rounded-[20px] p-4 sm:p-6">
                 <h3 className="text-lg font-extrabold text-dark-navy mb-4">
                   Tur <span className="text-primary-yellow">Randevusu</span>
                 </h3>
@@ -208,7 +208,7 @@ export default function KayıtPage() {
                       required
                       value={tourData.name}
                       onChange={handleTourChange}
-                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
+                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
                       placeholder="Adınız Soyadınız"
                     />
                   </div>
@@ -219,7 +219,7 @@ export default function KayıtPage() {
                       required
                       value={tourData.phone}
                       onChange={handleTourChange}
-                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
+                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
                       placeholder="Telefon"
                     />
                   </div>
@@ -230,7 +230,7 @@ export default function KayıtPage() {
                       required
                       value={tourData.preferredDate}
                       onChange={handleTourChange}
-                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
+                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
                     />
                   </div>
                   <div>
@@ -239,7 +239,7 @@ export default function KayıtPage() {
                       required
                       value={tourData.preferredTime}
                       onChange={handleTourChange}
-                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
+                      className="w-full rounded-2xl border border-dark-navy/10 px-4 py-3 min-h-[44px] text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow/50 focus:border-primary-yellow transition-colors bg-white"
                     >
                       <option value="">Saat Seçiniz</option>
                       <option value="10:00">10:00</option>
@@ -251,7 +251,7 @@ export default function KayıtPage() {
                   </div>
                   <button
                     type="submit"
-                    className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md w-full text-sm justify-center"
+                    className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md w-full text-sm justify-center min-h-[48px]"
                   >
                     Randevu Al
                   </button>
@@ -259,7 +259,7 @@ export default function KayıtPage() {
               </div>
 
               {/* Contact Info */}
-              <div className="bg-white rounded-[20px] p-6 shadow-sm">
+              <div className="bg-white rounded-[20px] p-4 sm:p-6 shadow-sm">
                 <h3 className="text-lg font-extrabold text-dark-navy mb-4">
                   İletişim <span className="text-primary-yellow">Bilgileri</span>
                 </h3>
@@ -335,14 +335,14 @@ export default function KayıtPage() {
       {/* CTA */}
       <PastelWave color="#FFB800" />
       <section className="bg-gradient-to-r from-primary-yellow to-[#FFD060] py-14 md:py-20 relative z-10">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
             Hala Sorularınız mı Var?
           </h2>
           <p className="text-dark-navy/70 mb-8">
             Bizi arayın, size yardımcı olalım!
           </p>
-          <a href="tel:02125551234" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base">
+          <a href="tel:02125551234" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base min-h-[48px]">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>

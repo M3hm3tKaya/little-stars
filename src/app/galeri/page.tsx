@@ -52,7 +52,7 @@ export default function GaleriPage() {
               <button
                 key={cat}
                 onClick={() => setActiveFilter(cat)}
-                className={`rounded-full px-5 py-2 text-sm font-bold transition-all ${
+                className={`rounded-full px-4 sm:px-5 py-2.5 text-sm font-bold transition-all min-h-[44px] ${
                   activeFilter === cat
                     ? "bg-primary-yellow text-dark-navy shadow-md"
                     : "bg-white text-dark-navy/60 hover:bg-pastel-yellow border border-dark-navy/10"
@@ -91,10 +91,10 @@ export default function GaleriPage() {
       {/* Lightbox */}
       {lightbox !== null && (
         <div className="lightbox-overlay" onClick={() => setLightbox(null)}>
-          <div className="relative max-w-3xl w-full mx-4" onClick={(e) => e.stopPropagation()}>
+          <div className="relative max-w-3xl w-full mx-4 sm:mx-6" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setLightbox(null)}
-              className="absolute -top-12 right-0 text-white/80 hover:text-white transition-colors"
+              className="absolute -top-14 right-0 min-w-[44px] min-h-[44px] flex items-center justify-center text-white/80 hover:text-white transition-colors"
             >
               <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -124,7 +124,7 @@ export default function GaleriPage() {
                   const prev = idx > 0 ? galleryItems[idx - 1].id : galleryItems[galleryItems.length - 1].id;
                   setLightbox(prev);
                 }}
-                className="text-white/70 hover:text-white transition-colors"
+                className="min-w-[44px] min-h-[44px] flex items-center justify-center text-white/70 hover:text-white transition-colors"
               >
                 <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -136,7 +136,7 @@ export default function GaleriPage() {
                   const next = idx < galleryItems.length - 1 ? galleryItems[idx + 1].id : galleryItems[0].id;
                   setLightbox(next);
                 }}
-                className="text-white/70 hover:text-white transition-colors"
+                className="min-w-[44px] min-h-[44px] flex items-center justify-center text-white/70 hover:text-white transition-colors"
               >
                 <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

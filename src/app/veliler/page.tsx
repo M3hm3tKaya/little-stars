@@ -92,10 +92,10 @@ export default function VelilerPage() {
           <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-10 text-center">
             Kayıt Süreci
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {registrationSteps.map((s, i) => (
               <div key={i} className="relative">
-                <div className="bg-white rounded-[20px] p-6 card-hover text-center h-full">
+                <div className="bg-white rounded-[20px] p-4 sm:p-6 card-hover text-center h-full">
                   <div className="w-14 h-14 rounded-full bg-primary-yellow/20 flex items-center justify-center mx-auto mb-4">
                     <span className="text-xl font-extrabold text-primary-yellow">{s.step}</span>
                   </div>
@@ -122,10 +122,10 @@ export default function VelilerPage() {
           <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-10 text-center">
             Gerekli <span className="text-primary-yellow">Evraklar</span>
           </h3>
-          <div className="bg-white rounded-[20px] p-8 shadow-sm">
-            <div className="space-y-4">
+          <div className="bg-white rounded-[20px] p-4 sm:p-6 md:p-8 shadow-sm">
+            <div className="space-y-3 sm:space-y-4">
               {documents.map((doc, i) => (
-                <label key={i} className="flex items-center gap-3 cursor-pointer group">
+                <label key={i} className="flex items-center gap-3 cursor-pointer group min-h-[44px] py-1">
                   <div className="w-6 h-6 rounded-lg border-2 border-primary-yellow/40 flex items-center justify-center group-hover:border-primary-yellow transition-colors shrink-0">
                     <svg className="w-4 h-4 text-primary-yellow opacity-0 group-hover:opacity-50 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
@@ -146,27 +146,51 @@ export default function VelilerPage() {
           <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-10 text-center">
             Haftalık <span className="text-primary-yellow">Menu</span>
           </h3>
-          <div className="overflow-x-auto rounded-[20px] shadow-sm">
+          {/* Desktop table */}
+          <div className="hidden sm:block overflow-x-auto rounded-[20px] shadow-sm">
             <table className="w-full bg-white rounded-[20px] overflow-hidden">
               <thead>
                 <tr className="bg-primary-yellow/10">
-                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Gun</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Kahvalti</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Öğle Yemeği</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-dark-navy">Ara Öğün</th>
+                  <th className="px-4 sm:px-6 py-4 text-left text-sm font-bold text-dark-navy">Gun</th>
+                  <th className="px-4 sm:px-6 py-4 text-left text-sm font-bold text-dark-navy">Kahvalti</th>
+                  <th className="px-4 sm:px-6 py-4 text-left text-sm font-bold text-dark-navy">Ogle Yemegi</th>
+                  <th className="px-4 sm:px-6 py-4 text-left text-sm font-bold text-dark-navy">Ara Ogun</th>
                 </tr>
               </thead>
               <tbody>
                 {weeklyMenu.map((menu, i) => (
                   <tr key={i} className={`${i % 2 === 0 ? "bg-white" : "bg-pastel-yellow/30"} border-t border-dark-navy/5`}>
-                    <td className="px-6 py-4 text-sm font-bold text-dark-navy">{menu.day}</td>
-                    <td className="px-6 py-4 text-sm text-dark-navy/60">{menu.breakfast}</td>
-                    <td className="px-6 py-4 text-sm text-dark-navy/60">{menu.lunch}</td>
-                    <td className="px-6 py-4 text-sm text-dark-navy/60">{menu.snack}</td>
+                    <td className="px-4 sm:px-6 py-4 text-sm font-bold text-dark-navy">{menu.day}</td>
+                    <td className="px-4 sm:px-6 py-4 text-sm text-dark-navy/60">{menu.breakfast}</td>
+                    <td className="px-4 sm:px-6 py-4 text-sm text-dark-navy/60">{menu.lunch}</td>
+                    <td className="px-4 sm:px-6 py-4 text-sm text-dark-navy/60">{menu.snack}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Mobile cards */}
+          <div className="sm:hidden space-y-3">
+            {weeklyMenu.map((menu, i) => (
+              <div key={i} className="bg-white rounded-[16px] p-4 shadow-sm">
+                <p className="font-bold text-dark-navy text-sm mb-3 pb-2 border-b border-dark-navy/10">{menu.day}</p>
+                <div className="space-y-2">
+                  <div>
+                    <p className="text-xs font-semibold text-primary-yellow mb-0.5">Kahvalti</p>
+                    <p className="text-xs text-dark-navy/60">{menu.breakfast}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-accent-blue mb-0.5">Ogle Yemegi</p>
+                    <p className="text-xs text-dark-navy/60">{menu.lunch}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-accent-green mb-0.5">Ara Ogun</p>
+                    <p className="text-xs text-dark-navy/60">{menu.snack}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
           <p className="mt-4 text-xs text-dark-navy/40 text-center">
             * Menü diyetisyen onaylı olup mevsime göre değişiklik gösterebilir. Alerjik durumlar için özel menü hazırlanır.
@@ -186,7 +210,7 @@ export default function VelilerPage() {
               <div key={i} className="bg-white rounded-[16px] overflow-hidden shadow-sm">
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between px-6 py-4 text-left"
+                  className="w-full flex items-center justify-between px-4 sm:px-6 py-4 text-left min-h-[48px]"
                 >
                   <span className="font-bold text-dark-navy text-sm pr-4">{faq.q}</span>
                   <svg
@@ -203,7 +227,7 @@ export default function VelilerPage() {
                   className="accordion-content"
                   style={{ maxHeight: openFaq === i ? "200px" : "0px" }}
                 >
-                  <div className="px-6 pb-4">
+                  <div className="px-4 sm:px-6 pb-4">
                     <p className="text-sm text-dark-navy/60 leading-relaxed">{faq.a}</p>
                   </div>
                 </div>

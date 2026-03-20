@@ -74,13 +74,20 @@
   /* Pill button style */
   .btn-pill {
     border-radius: 9999px;
-    padding: 12px 32px;
+    padding: 12px 24px;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    min-height: 44px;
+  }
+
+  @media (min-width: 640px) {
+    .btn-pill {
+      padding: 12px 32px;
+    }
   }
 
   .btn-pill:hover {

@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className={`${nunito.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-nunito bg-warm-white">
+      <body className="min-h-full flex flex-col font-nunito bg-warm-white overflow-x-hidden">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

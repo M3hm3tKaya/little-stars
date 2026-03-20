@@ -118,7 +118,7 @@ export default function ProgramlarPage() {
                   <span className={`inline-block ${program.bg} border ${program.borderColor} rounded-full px-4 py-1.5 text-sm font-bold ${program.accent} mb-4`}>
                     {program.age}
                   </span>
-                  <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-4">{program.name}</h3>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-dark-navy mb-4">{program.name}</h3>
                   <p className="text-dark-navy/60 mb-6 leading-relaxed">{program.desc}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
@@ -132,12 +132,12 @@ export default function ProgramlarPage() {
                     ))}
                   </div>
 
-                  <p className="text-xs text-dark-navy/50 bg-white/50 inline-block rounded-full px-4 py-2 mb-4">
+                  <p className="text-xs text-dark-navy/50 bg-white/50 rounded-full px-3 sm:px-4 py-2 mb-4 inline-block max-w-full overflow-hidden">
                     {program.schedule}
                   </p>
 
                   <div className="block">
-                    <Link href="/kayit" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md text-sm">
+                    <Link href="/kayit" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md text-sm min-h-[44px]">
                       Kayıt İçin Başvur
                     </Link>
                   </div>
@@ -150,14 +150,14 @@ export default function ProgramlarPage() {
 
       {/* CTA */}
       <section className="bg-gradient-to-r from-primary-yellow to-[#FFD060] py-14 md:py-20 relative z-10">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
             Hangi Program Çocuğunuz İçin Uygun?
           </h2>
           <p className="text-dark-navy/70 mb-8">
             Ücretsiz danışmanlık için bizi arayın veya tur randevusu alın.
           </p>
-          <Link href="/kayit" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base">
+          <Link href="/kayit" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base min-h-[48px]">
             Tur Randevusu Al
           </Link>
         </div>

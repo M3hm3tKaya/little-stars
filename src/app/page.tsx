@@ -105,13 +105,13 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/kayit" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-lg hover:shadow-xl text-base">
+            <Link href="/kayit" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-lg hover:shadow-xl text-base min-h-[48px] w-full sm:w-auto justify-center">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
               Hemen Kayıt Ol
             </Link>
-            <Link href="/programlar" className="btn-pill bg-white text-dark-navy font-bold shadow-md border border-dark-navy/10 text-base">
+            <Link href="/programlar" className="btn-pill bg-white text-dark-navy font-bold shadow-md border border-dark-navy/10 text-base min-h-[48px] w-full sm:w-auto justify-center">
               Programları İncele
             </Link>
           </div>
@@ -125,7 +125,7 @@ export default function HomePage() {
           <SectionTitle title="Neden" highlight="Little Stars?" subtitle="Çocuklarınızın en değerli yıllarını bize emanet etmeniz için 3 önemli neden." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {values.map((v, i) => (
-              <div key={i} className={`${v.color} rounded-[20px] p-8 card-hover text-center`}>
+              <div key={i} className={`${v.color} rounded-[20px] p-6 sm:p-8 card-hover text-center`}>
                 <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/60 ${v.accent} mb-5`}>
                   {v.icon}
                 </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
           <SectionTitle title="Yaş Gruplarına Göre" highlight="Programlar" subtitle="Her yaş grubuna özel, gelişim odaklı eğitim programları." />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {programs.map((p, i) => (
-              <div key={i} className={`bg-white rounded-[20px] p-6 border-l-4 ${p.border} card-hover`}>
+              <div key={i} className={`bg-white rounded-[20px] p-5 sm:p-6 border-l-4 ${p.border} card-hover`}>
                 <span className={`inline-block ${p.bg} rounded-full px-3 py-1 text-xs font-bold text-dark-navy/70 mb-3`}>
                   {p.age}
                 </span>
@@ -154,7 +154,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/programlar" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md">
+            <Link href="/programlar" className="btn-pill bg-primary-yellow text-dark-navy font-bold shadow-md min-h-[44px]">
               Tüm Programları Gör
             </Link>
           </div>
@@ -181,9 +181,9 @@ export default function HomePage() {
           </div>
 
           {/* Mobile vertical */}
-          <div className="md:hidden space-y-4">
+          <div className="md:hidden space-y-3">
             {dailyFlow.map((item, i) => (
-              <div key={i} className="flex items-center gap-4">
+              <div key={i} className="flex items-center gap-4 min-h-[44px]">
                 <div className="w-10 h-10 rounded-full bg-primary-yellow/20 flex items-center justify-center shrink-0">
                   <span className="text-sm font-bold text-primary-yellow">{i + 1}</span>
                 </div>
@@ -204,7 +204,7 @@ export default function HomePage() {
           <SectionTitle title="Velilerimiz" highlight="Ne Diyor?" subtitle="Mutlu ailelerimizden geri bildirimler." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {testimonials.map((t, i) => (
-              <div key={i} className={`${t.bg} rounded-[20px] p-8 card-hover relative`}>
+              <div key={i} className={`${t.bg} rounded-[20px] p-6 sm:p-8 card-hover relative`}>
                 <svg className="absolute top-4 right-4 w-8 h-8 text-dark-navy/10" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z"/>
                 </svg>
@@ -224,7 +224,7 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Tesislerimiz" subtitle="Modern ve çocuk dostu alanlarımız." />
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {galleryImages.map((img, i) => (
               <div key={i} className={`${img.bg} rounded-[20px] aspect-[4/3] flex items-center justify-center card-hover cursor-pointer`}>
                 <div className="text-center text-white">
@@ -237,7 +237,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/galeri" className="btn-pill bg-white text-dark-navy font-bold shadow-md border border-dark-navy/10">
+            <Link href="/galeri" className="btn-pill bg-white text-dark-navy font-bold shadow-md border border-dark-navy/10 min-h-[44px]">
               Tüm Galeri
             </Link>
           </div>
@@ -246,18 +246,18 @@ export default function HomePage() {
 
       {/* CTA BAND */}
       <section className="bg-gradient-to-r from-primary-yellow to-[#FFD060] py-14 md:py-20 relative z-10">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-dark-navy mb-4">
             Çocuğunuz İçin En İyi Başlangıç
           </h2>
           <p className="text-dark-navy/70 mb-8 text-base md:text-lg">
             Hemen kayıt olun, okulumuzu ziyaret edin ve farkı yerinde görün!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/kayit" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base">
+            <Link href="/kayit" className="btn-pill bg-dark-navy text-white font-bold shadow-lg text-base min-h-[48px] w-full sm:w-auto justify-center">
               Kayıt Formu
             </Link>
-            <Link href="/kayit" className="btn-pill bg-white text-dark-navy font-bold shadow-md text-base">
+            <Link href="/kayit" className="btn-pill bg-white text-dark-navy font-bold shadow-md text-base min-h-[48px] w-full sm:w-auto justify-center">
               Tur Randevusu Al
             </Link>
           </div>

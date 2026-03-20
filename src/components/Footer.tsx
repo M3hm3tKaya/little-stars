@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark-navy text-white/80 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-12">
           {/* Logo & About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -24,7 +24,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-white font-bold mb-4">Hızlı Erişim</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-0.5">
               {[
                 { href: "/programlar", label: "Programlar" },
                 { href: "/egitmenler", label: "Eğitmenler" },
@@ -34,7 +34,7 @@ export default function Footer() {
                 { href: "/kayit", label: "Kayıt ve İletişim" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-white/60 hover:text-primary-yellow transition-colors">
+                  <Link href={link.href} className="text-sm text-white/60 hover:text-primary-yellow transition-colors py-1 min-h-[44px] flex items-center">
                     {link.label}
                   </Link>
                 </li>
@@ -78,7 +78,7 @@ export default function Footer() {
             </div>
             <div className="flex gap-3">
               {["facebook", "instagram", "twitter"].map((social) => (
-                <a key={social} href="#" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-yellow/20 transition-colors" aria-label={social}>
+                <a key={social} href="#" className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-yellow/20 transition-colors" aria-label={social}>
                   <svg className="w-4 h-4 text-white/70" fill="currentColor" viewBox="0 0 24 24">
                     {social === "facebook" && <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>}
                     {social === "instagram" && <><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="17.5" cy="6.5" r="1.5"/></>}

@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-xl hover:bg-pastel-yellow/30 transition-colors"
+            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl hover:bg-pastel-yellow/30 transition-colors"
             aria-label="Menu"
           >
             <svg className="w-6 h-6 text-dark-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -77,7 +77,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 text-sm font-semibold text-dark-navy/80 hover:text-primary-yellow hover:bg-pastel-yellow/30 rounded-2xl transition-colors"
+                className="px-4 py-3 min-h-[44px] flex items-center text-sm font-semibold text-dark-navy/80 hover:text-primary-yellow hover:bg-pastel-yellow/30 rounded-2xl transition-colors"
               >
                 {link.label}
               </Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
             <Link
               href="/kayit"
               onClick={() => setIsOpen(false)}
-              className="block text-center mt-3 btn-pill bg-primary-yellow text-dark-navy text-sm font-bold shadow-md"
+              className="mt-3 btn-pill bg-primary-yellow text-dark-navy text-sm font-bold shadow-md min-h-[44px] justify-center w-full"
             >
               Kayıt Ol
             </Link>

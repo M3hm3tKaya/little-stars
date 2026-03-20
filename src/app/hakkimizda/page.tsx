@@ -48,8 +48,8 @@ function CounterCard({ value, suffix, label, color }: { value: number; suffix: s
   }, [value]);
 
   return (
-    <div ref={ref} className="bg-white rounded-[20px] p-8 card-hover text-center">
-      <p className={`text-4xl md:text-5xl font-extrabold ${color} mb-2`}>
+    <div ref={ref} className="bg-white rounded-[20px] p-5 sm:p-8 card-hover text-center">
+      <p className={`text-3xl sm:text-4xl md:text-5xl font-extrabold ${color} mb-2`}>
         {count}{suffix}
       </p>
       <p className="text-sm font-semibold text-dark-navy/60">{label}</p>
@@ -99,7 +99,7 @@ export default function HakkımızdaPage() {
 
             {/* Story */}
             <div className="w-full lg:w-1/2">
-              <h3 className="text-2xl md:text-3xl font-extrabold text-dark-navy mb-6">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-dark-navy mb-4 sm:mb-6">
                 Kuruluş <span className="text-primary-yellow">Hikayemiz</span>
               </h3>
               <div className="space-y-4 text-dark-navy/60 leading-relaxed">
@@ -139,7 +139,7 @@ export default function HakkımızdaPage() {
       <section className="py-16 md:py-24 bg-pastel-yellow relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Rakamlarla" highlight="Little Stars" />
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {stats.map((stat, i) => (
               <CounterCard key={i} {...stat} />
             ))}
@@ -152,9 +152,9 @@ export default function HakkımızdaPage() {
       <section className="py-16 md:py-24 bg-warm-white relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Sertifika ve" highlight="Onaylar" subtitle="Kalite ve güvenlik standartlarımız." />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {certificates.map((cert, i) => (
-              <div key={i} className="bg-white rounded-[20px] p-6 card-hover text-center shadow-sm">
+              <div key={i} className="bg-white rounded-[20px] p-4 sm:p-6 card-hover text-center shadow-sm">
                 <div className="w-14 h-14 rounded-full bg-primary-yellow/15 flex items-center justify-center mx-auto mb-4">
                   <svg className="w-7 h-7 text-primary-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
@@ -173,7 +173,7 @@ export default function HakkımızdaPage() {
       <section className="py-16 md:py-24 bg-pastel-purple relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle title="Misyonumuz" />
-          <p className="text-dark-navy/70 leading-relaxed text-lg">
+          <p className="text-dark-navy/70 leading-relaxed text-base sm:text-lg">
             Her çocuğun benzersiz bir yıldız olduğuna inanıyoruz. Amacimiz,
             güvende, sevgi dolu ve stimüle edici bir ortamda çocukların
             fiziksel, duygusal, sosyal ve bilişsel gelişimlerini desteklemek,
